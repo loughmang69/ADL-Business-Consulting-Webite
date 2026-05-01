@@ -22,7 +22,7 @@ const About = ({ tweaks }) => {
             }}></div>
             <img
               src="uploads/headshot.jpg"
-              alt="Garrett Loughman, CPA"
+              alt="Garrett Loughman, CPA, MBA"
               style={{
                 position: 'relative', zIndex: 1,
                 width: '100%', maxWidth: 360,
