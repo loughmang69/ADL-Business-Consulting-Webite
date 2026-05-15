@@ -738,7 +738,7 @@ const Hero = ({ tweaks }) => {
         </div>
 
         <h1 style={{
-          fontSize: 'clamp(26px, 3.8vw, 52px)',
+          fontSize: 'clamp(36px, 6vw, 68px)',
           fontWeight: 800, lineHeight: 1.15,
           color: '#fff', marginBottom: 24,
           letterSpacing: '-0.03em',
@@ -752,12 +752,12 @@ const Hero = ({ tweaks }) => {
             }}>{tweaks.heroTagline}</span>
           ) : (
             <>
-              ADL Business Consulting pairs deep CPA expertise with hands-on business consulting —{' '}
+              Big-firm expertise.{' '}
               <span style={{
                 background: `linear-gradient(90deg, ${accent}, #a8e8f5)`,
                 WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
-              }}>so you spend less time on financials and more time growing what you built.</span>
+              }}>Small business focus.</span>
             </>
           )}
         </h1>
@@ -768,7 +768,7 @@ const Hero = ({ tweaks }) => {
           maxWidth: 560, margin: '0 auto 44px',
           textWrap: 'pretty',
         }}>
-          Serving small businesses and individuals across the Bay Area.
+          ADL Business Consulting pairs deep CPA expertise with hands-on business consulting so you spend less time on financials and more time growing what you built.
         </p>
 
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -1304,47 +1304,26 @@ const Testimonials = ({ tweaks }) => {
             </div>
           ))}
 
-          {/* Submit-a-testimonial CTA card */}
-          <div style={{
-            borderRadius: 20,
-            padding: '32px 28px',
-            border: '2px dashed rgba(26,61,110,0.18)',
-            background: 'rgba(247,249,252,0.7)',
-            display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 20,
-            transition: 'border-color 0.22s, transform 0.22s',
-          }}
-          onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(26,61,110,0.35)'; e.currentTarget.style.transform = 'translateY(-3px)'; }}
-          onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(26,61,110,0.18)'; e.currentTarget.style.transform = 'translateY(0)'; }}
-          >
-            {/* Envelope icon */}
-            <div style={{
-              width: 48, height: 48, borderRadius: 14,
-              background: 'rgba(26,61,110,0.08)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-            }}>
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                <rect x="2" y="5" width="18" height="13" rx="2" stroke="#1a3d6e" strokeWidth="1.7"/>
-                <path d="M2 8l9 6 9-6" stroke="#1a3d6e" strokeWidth="1.7" strokeLinecap="round"/>
-              </svg>
-            </div>
+        </div>
 
-            <div>
-              <div style={{ fontSize: 17, fontWeight: 700, color: '#0d1f3c', marginBottom: 10, lineHeight: 1.3 }}>
-                Share Your Experience
-              </div>
-              <p style={{ fontSize: 14.5, lineHeight: 1.7, color: '#5a6a82', textWrap: 'pretty' }}>
-                Did ADL Business Consulting help you and your business in a meaningful way? We'd love to hear from you.
-              </p>
+        {/* Submit-a-testimonial CTA — full-width centered strip */}
+        <div style={{
+          marginTop: 48,
+          paddingTop: 40,
+          borderTop: '1px solid rgba(20,43,86,0.1)',
+          textAlign: 'center',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 12 }}>
+            <div style={{ fontSize: 18, fontWeight: 700, color: '#0d1f3c' }}>
+              Share Your Experience
             </div>
-
             <a
               href="mailto:info@adlbusinessconsulting.com?subject=Client%20Testimonial"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: 8,
-                padding: '11px 22px', borderRadius: 100,
+                padding: '10px 22px', borderRadius: 100,
                 background: '#1a3d6e', color: '#fff',
                 fontWeight: 600, fontSize: 14, textDecoration: 'none',
-                alignSelf: 'flex-start',
                 transition: 'background 0.2s, transform 0.15s',
                 boxShadow: '0 4px 14px rgba(26,61,110,0.18)',
               }}
@@ -1355,9 +1334,12 @@ const Testimonials = ({ tweaks }) => {
                 <rect x="1" y="3" width="13" height="10" rx="1.5" stroke="currentColor" strokeWidth="1.4"/>
                 <path d="M1 6l6.5 4.5L14 6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
               </svg>
-              info@adlbusinessconsulting.com
+              Submit a Testimonial
             </a>
           </div>
+          <p style={{ fontSize: 15, lineHeight: 1.6, color: '#5a6a82', margin: '0 auto', maxWidth: 480 }}>
+            Did ADL Business Consulting help you and your business in a meaningful way? We'd love to hear from you.
+          </p>
         </div>
       </div>
     </section>
@@ -1371,8 +1353,8 @@ const Testimonials = ({ tweaks }) => {
 
 // Reviews.jsx — Google Reviews
 const GOOGLE_PLACE_ID = '2846227592880255355';
-const GOOGLE_PROFILE_URL = 'https://www.google.com/maps?cid=2846227592880255355';
-const GOOGLE_REVIEW_URL = 'https://search.google.com/local/writereview?placeid=2846227592880255355';
+const GOOGLE_PROFILE_URL = 'https://www.google.com/search?q=ADL+Business+Consulting+PC+Garrett+Loughman+CPA+Fremont+CA';
+const GOOGLE_REVIEW_URL = 'https://g.page/r/CUJAnBWd91buEAE/review';
 
 const Reviews = ({ tweaks }) => {
   const accent = tweaks?.accentColor || '#67cbea';
@@ -1644,7 +1626,7 @@ const ConsultationForm = ({ tweaks }) => {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
             {[
               { icon: '✓', text: 'No-cost, no-commitment consultation' },
-              { icon: '✓', text: 'Response within one business day' },
+              { icon: '✓', text: 'Response within 2 business days' },
               { icon: '✓', text: 'Available by phone, video, or email' },
               { icon: '✓', text: 'Fremont, CA and surrounding Bay Area' },
             ].map(item => (
@@ -2191,4 +2173,27 @@ const App = () => {
           placeholder="Leave blank for default"
           onChange={v => setTweak('heroTagline', v)}
         />
-        <TweakSection label="Sect
+        <TweakSection label="Sections"/>
+        <TweakToggle
+          label="Show Google Reviews"
+          value={tweaks.showReviews}
+          onChange={v => setTweak('showReviews', v)}
+        />
+        <TweakSection label="Cards"/>
+        <TweakRadio
+          label="Service Card Style"
+          value={tweaks.cardStyle}
+          options={[{label:'Shadow', value:'shadow'},{label:'Border', value:'border'},{label:'Flat', value:'flat'}]}
+          onChange={v => setTweak('cardStyle', v)}
+        />
+      </TweaksPanel>
+    </>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App/>);
+</script>
+
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                              
