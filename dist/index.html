@@ -850,7 +850,7 @@ const SERVICES = [
         <path d="M20 15v10M15 20h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
       </svg>
     ),
-    title: 'Entity Structure Review\u00b9',
+    title: 'Entity Structure Review',
     tag: 'Tax Strategy',
     desc: 'Determine the optimal business structure — LLC, S-Corp, C-Corp — from a tax efficiency standpoint. Avoid costly mistakes before they happen.',
   },
@@ -1124,7 +1124,7 @@ const About = ({ tweaks }) => {
 
           {/* Quick credentials */}
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'center', maxWidth: 360 }}>
-            {['Licensed Since 2013', 'Fremont, CA', 'Founded 2026'].map(tag => (
+            {['Licensed Since 2013', 'Fremont, CA'].map(tag => (
               <span key={tag} style={{
                 fontSize: 12, fontWeight: 600, padding: '5px 12px', borderRadius: 100,
                 background: 'rgba(26,61,110,0.07)', color: '#1a3d6e',
@@ -1167,7 +1167,7 @@ const About = ({ tweaks }) => {
           }}>
             {[
               { value: '15+', label: 'Years in Finance' },
-              { value: '2013', label: 'CPA Licensed' },
+              { value: '13+', label: 'Years Licensed' },
               { value: '9', label: 'Practice Areas' },
             ].map(stat => (
               <div key={stat.label}>
@@ -1881,7 +1881,7 @@ const Footer = ({ tweaks }) => {
               </div>
               <div>
                 <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.35)', marginBottom: 3 }}>Location</div>
-                <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)' }}>Fremont, California</div>
+                <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)', lineHeight: 1.6 }}>PO Box 1208<br/>Fremont, CA 94538</div>
               </div>
             </div>
           </div>
@@ -1901,7 +1901,6 @@ const Footer = ({ tweaks }) => {
             border: '1px solid rgba(255,255,255,0.12)',
             fontSize: 13, lineHeight: 1.7, color: 'rgba(255,255,255,0.6)',
           }}>
-            <sup style={{ fontSize: 11, marginRight: 4, fontWeight: 700 }}>1</sup>
             ADL Business Consulting, PC is not licensed to provide legal advice. All statements made are either from a tax strategy perspective or for educational purposes.
           </div>
           <div style={{ fontSize: 13 }}>
@@ -2196,4 +2195,4 @@ root.render(<App/>);
 </script>
 
 </body>
-</html>                                                                                                                                                                                                                                                                                                                                                                                                                              
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
