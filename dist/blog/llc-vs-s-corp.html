@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LLC vs. S-Corp: Which Entity Structure Saves You More in Taxes? | ADL Business Consulting</title>
+  <meta name="description" content="Learn when an S-Corp election saves you more than an LLC default. A Bay Area CPA breaks down self-employment taxes, reasonable salary rules, and California-specific costs."/>
+  <meta name="author" content="Garrett Loughman, CPA"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.adlbusinessconsulting.com/blog/llc-vs-s-corp.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://www.adlbusinessconsulting.com/blog/llc-vs-s-corp.html"/>
+  <meta property="og:title" content="LLC vs. S-Corp: Which Entity Structure Saves You More in Taxes?"/>
+  <meta property="og:description" content="A Bay Area CPA explains the self-employment tax math behind LLC vs. S-Corp — and when the S-Corp election actually pencils out."/>
+  <meta property="og:image" content="https://www.adlbusinessconsulting.com/og-image.jpg"/>
+  <meta property="og:site_name" content="ADL Business Consulting, PC"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "LLC vs. S-Corp: Which Entity Structure Saves You More in Taxes?",
+    "description": "A Bay Area CPA explains the self-employment tax math behind LLC vs. S-Corp and when the S-Corp election actually makes financial sense.",
+    "datePublished": "2026-04-28",
+    "dateModified": "2026-04-28",
+    "author": { "@type": "Person", "name": "Garrett Loughman", "jobTitle": "CPA" },
+    "publisher": { "@type": "Organization", "name": "ADL Business Consulting, PC", "url": "https://www.adlbusinessconsulting.com" },
+    "url": "https://www.adlbusinessconsulting.com/blog/llc-vs-s-corp.html",
+    "mainEntityOfPage": "https://www.adlbusinessconsulting.com/blog/llc-vs-s-corp.html"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', -apple-system, sans-serif; -webkit-font-smoothing: antialiased; background: #fff; color: #0d1f3c; line-height: 1.6; }
+    a { color: #1a3d6e; }
+    /* Nav */
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.97); backdrop-filter: blur(12px); box-shadow: 0 1px 24px rgba(20,43,86,0.10); border-bottom: 1px solid rgba(20,43,86,0.08); }
+    .nav-inner { max-width: 1140px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo-adl { font-size: 22px; font-weight: 900; letter-spacing: -0.04em; color: #67cbea; }
+    .nav-logo-text { font-size: 13px; font-weight: 600; color: #1a3d6e; margin-left: 8px; line-height: 1.2; }
+    .nav-links { display: flex; gap: 4px; align-items: center; }
+    .nav-links a { padding: 8px 14px; border-radius: 8px; font-size: 15px; font-weight: 500; color: #1a3d6e; text-decoration: none; transition: background 0.2s; }
+    .nav-links a:hover { background: rgba(26,61,110,0.08); }
+    .nav-cta { margin-left: 8px; padding: 9px 20px; border-radius: 100px; background: #67cbea; color: #142b56; font-weight: 700; font-size: 14px; text-decoration: none; transition: transform 0.15s; }
+    .nav-cta:hover { transform: translateY(-1px); }
+    @media (max-width: 700px) { .nav-links { display: none; } }
+    /* Article layout */
+    .article-wrap { max-width: 740px; margin: 0 auto; padding: 64px 24px 100px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: #5a6a82; text-decoration: none; margin-bottom: 40px; transition: color 0.2s; }
+    .back-link:hover { color: #1a3d6e; }
+    .post-tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; background: rgba(26,61,110,0.09); color: #142b56; margin-bottom: 16px; }
+    h1 { font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.15; letter-spacing: -0.03em; color: #0d1f3c; margin-bottom: 20px; text-wrap: balance; }
+    .post-meta { display: flex; align-items: center; gap: 16px; margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(20,43,86,0.1); flex-wrap: wrap; }
+    .author-badge { display: flex; align-items: center; gap: 10px; }
+    .author-initials { width: 38px; height: 38px; border-radius: 50%; background: #1a3d6e; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; flex-shrink: 0; }
+    .author-name { font-size: 14px; font-weight: 600; color: #0d1f3c; }
+    .post-date { font-size: 13px; color: #7a8a9e; }
+    .read-time { font-size: 13px; color: #7a8a9e; }
+    /* Article body */
+    .article-body h2 { font-size: clamp(20px, 2.5vw, 26px); font-weight: 800; color: #0d1f3c; letter-spacing: -0.03em; margin: 48px 0 16px; line-height: 1.2; }
+    .article-body p { font-size: 17px; line-height: 1.75; color: #2a3a52; margin-bottom: 20px; }
+    .article-body ul, .article-body ol { margin: 0 0 20px 24px; }
+    .article-body li { font-size: 17px; line-height: 1.75; color: #2a3a52; margin-bottom: 8px; }
+    .article-body strong { color: #0d1f3c; font-weight: 700; }
+    .callout { background: rgba(26,61,110,0.05); border-left: 3px solid #1a3d6e; border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 32px 0; }
+    .callout p { margin: 0; font-size: 16px; color: #1a3d6e; font-weight: 500; }
+    .number-table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 15px; }
+    .number-table th { background: #0d1f3c; color: #fff; padding: 10px 16px; text-align: left; font-size: 13px; font-weight: 700; }
+    .number-table td { padding: 10px 16px; border-bottom: 1px solid rgba(20,43,86,0.08); color: #2a3a52; }
+    .number-table tr:last-child td { border-bottom: none; }
+    .number-table tr:nth-child(even) td { background: rgba(26,61,110,0.03); }
+    .cta-box { background: linear-gradient(135deg, #0d1f3c, #1a3d6e); border-radius: 20px; padding: 40px 36px; margin: 56px 0; text-align: center; }
+    .cta-box h3 { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 12px; letter-spacing: -0.02em; }
+    .cta-box p { font-size: 16px; color: rgba(255,255,255,0.72); margin-bottom: 28px; }
+    .cta-btn { display: inline-block; padding: 14px 32px; border-radius: 100px; background: #67cbea; color: #142b56; font-weight: 800; font-size: 15px; text-decoration: none; transition: transform 0.15s; }
+    .cta-btn:hover { transform: translateY(-2px); color: #142b56; }
+    .author-box { border: 1px solid rgba(20,43,86,0.1); border-radius: 16px; padding: 28px; margin-top: 56px; display: flex; gap: 20px; align-items: flex-start; }
+    .author-box .author-initials { width: 52px; height: 52px; font-size: 16px; flex-shrink: 0; }
+    .author-box h4 { font-size: 16px; font-weight: 700; color: #0d1f3c; margin-bottom: 6px; }
+    .author-box p { font-size: 14px; color: #5a6a82; line-height: 1.6; margin: 0; }
+    .related { margin-top: 64px; padding-top: 48px; border-top: 1px solid rgba(20,43,86,0.1); }
+    .related h3 { font-size: 18px; font-weight: 700; color: #0d1f3c; margin-bottom: 24px; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+    .related-card { display: block; padding: 20px; border-radius: 12px; border: 1px solid rgba(20,43,86,0.1); text-decoration: none; transition: all 0.2s; background: #f7f9fc; }
+    .related-card:hover { border-color: #1a3d6e; transform: translateY(-2px); }
+    .related-card .rtag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #1a6a8a; margin-bottom: 8px; }
+    .related-card h4 { font-size: 14px; font-weight: 700; color: #0d1f3c; line-height: 1.3; }
+    footer { background: #0a172e; padding: 48px 24px 32px; color: rgba(255,255,255,0.6); margin-top: 0; }
+    .footer-inner { max-width: 1140px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; }
+    .footer-disclaimer { max-width: 1140px; margin: 0 auto 24px; font-size: 13px; line-height: 1.7; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 14px 18px; }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { font-size: 13px; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: rgba(255,255,255,0.8); }
+    .footer-copy { font-size: 13px; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <span class="nav-logo-adl">ADL</span>
+      <span class="nav-logo-text">Business<br>Consulting</span>
+    </a>
+    <div class="nav-links">
+      <a href="/#services">Services</a>
+      <a href="/#about">About</a>
+      <a href="/#testimonials">Testimonials</a>
+      <a href="/#contact">Contact</a>
+      <a href="/#contact" class="nav-cta">Free Consultation</a>
+    </div>
+  </div>
+</nav>
+
+<div class="article-wrap">
+  <a href="/#blog" class="back-link">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Back to all posts
+  </a>
+
+  <div class="post-tag">Tax Strategy</div>
+  <h1>LLC vs. S-Corp: Which Entity Structure Saves You More in Taxes?</h1>
+
+  <div class="post-meta">
+    <div class="author-badge">
+      <div class="author-initials">GL</div>
+      <div>
+        <div class="author-name">Garrett Loughman, CPA</div>
+        <div class="post-date">April 28, 2026</div>
+      </div>
+    </div>
+    <span class="read-time">· 5 min read</span>
+  </div>
+
+  <div class="article-body">
+    <p>One of the most impactful financial decisions a small business owner can make is choosing the right entity structure — and most people get it wrong simply because no one explained the numbers. The choice between operating as a single-member LLC and electing S-Corp status with the IRS can mean the difference of thousands of dollars in taxes each year. But it only makes sense if the timing and circumstances are right.</p>
+
+    <p>This article walks through exactly how each structure is taxed, shows you the math with a real example, and explains when the S-Corp election is actually worth the added complexity.</p>
+
+    <h2>How LLC Taxation Works by Default</h2>
+    <p>A single-member LLC is a "disregarded entity" for federal tax purposes, which means the IRS treats it as a sole proprietorship. All of your business profit flows directly to your personal tax return on Schedule C — and the entire net profit is subject to <strong>self-employment (SE) tax</strong>.</p>
+    <p>Self-employment tax covers both the employee and employer portions of Social Security and Medicare. In 2026 that's 15.3% on net earnings up to the Social Security wage base ($176,100), and 2.9% on everything above that. As a sole proprietor or single-member LLC, you're paying both halves yourself — there's no employer to split the bill with.</p>
+    <p>You do get to deduct half of your SE tax as an above-the-line deduction, which softens the blow slightly. But for high earners, the SE tax burden is substantial.</p>
+
+    <h2>How the S-Corp Election Changes Things</h2>
+    <p>When you elect S-Corp status (by filing IRS Form 2553), your business still passes income through to your personal return — but the structure of how that income is taxed changes meaningfully.</p>
+    <p>As an S-Corp owner who works in the business, you're required to pay yourself a <strong>reasonable salary</strong>. That salary is run through payroll and is subject to FICA taxes — both your share (7.65%) and the company's share (7.65%), just like any other employee/employer arrangement. But here's the key: any remaining profit you take as a <strong>distribution</strong> is not subject to self-employment tax or FICA.</p>
+    <p>That split — salary vs. distribution — is where the tax savings come from.</p>
+
+    <h2>Running the Numbers: A Concrete Example</h2>
+    <p>Let's say your business generates $150,000 in net profit for the year.</p>
+
+    <table class="number-table">
+      <thead><tr><th></th><th>LLC (Schedule C)</th><th>S-Corp Election</th></tr></thead>
+      <tbody>
+        <tr><td>Net business profit</td><td>$150,000</td><td>$150,000</td></tr>
+        <tr><td>Reasonable salary</td><td>—</td><td>$70,000</td></tr>
+        <tr><td>Profit distribution</td><td>—</td><td>$80,000</td></tr>
+        <tr><td>Wages subject to FICA/SE tax</td><td>$150,000</td><td>$70,000</td></tr>
+        <tr><td>Estimated SE / payroll tax</td><td>≈ $21,000</td><td>≈ $10,700</td></tr>
+        <tr><td><strong>Est. annual tax savings</strong></td><td>—</td><td><strong>≈ $10,300</strong></td></tr>
+      </tbody>
+    </table>
+
+    <p>At $150,000 in profit, the S-Corp election can save roughly $10,000 per year in employment taxes. That's a material number — but the savings aren't free. There are real costs to operating as an S-Corp, which we'll cover next.</p>
+
+    <div class="callout"><p>These figures are illustrative. Your actual savings depend on your specific income level, reasonable salary determination, and state tax situation. Run the numbers with a CPA before making a decision.</p></div>
+
+    <h2>The "Reasonable Salary" Requirement</h2>
+    <p>The IRS knows that S-Corp owners would love to pay themselves a $1 salary and take everything as a distribution. That's why they require you to pay yourself a "reasonable salary" — one that reflects what you'd pay someone else to do your job.</p>
+    <p>There's no bright-line rule for what's reasonable. The IRS looks at comparable wages in your industry, the level of your duties, your hours, and the business's financials. Common benchmarks for Bay Area professionals range from $60,000 to $100,000+ depending on the nature of the work.</p>
+    <p>Underreporting your salary to minimize FICA is one of the IRS's top audit targets for S-Corps. Getting this wrong can result in back taxes, penalties, and interest. The salary should be defensible if examined.</p>
+
+    <h2>California-Specific Costs to Factor In</h2>
+    <p>California adds a layer of complexity that can erode some of the federal tax savings:</p>
+    <ul>
+      <li><strong>S-Corp franchise tax:</strong> California imposes a 1.5% tax on S-Corp net income (after the salary), with a minimum of $800 per year.</li>
+      <li><strong>S-Corp income fee:</strong> For S-Corps with net income over $250,000, California charges an additional annual fee ranging from $900 to $11,790.</li>
+      <li><strong>Payroll compliance:</strong> Running payroll in California means dealing with SDI, ETT, PIT withholding, and quarterly DE 9 filings. It adds administrative overhead that an LLC doesn't have.</li>
+    </ul>
+    <p>For many Bay Area businesses, the California costs reduce the net benefit of the S-Corp election by $2,000–$4,000 per year. That means the breakeven income level is higher here than in other states.</p>
+
+    <h2>When Does the S-Corp Election Actually Make Sense?</h2>
+    <p>As a general rule of thumb, the S-Corp election starts to make financial sense when your business is generating <strong>at least $80,000–$100,000 in net profit per year</strong>, after accounting for your own reasonable salary. Below that threshold, the payroll administration costs, accounting fees, and California taxes tend to consume most of the savings.</p>
+    <p>The election also makes more sense if:</p>
+    <ul>
+      <li>Your business is growing and profits are expected to increase year over year</li>
+      <li>You have a CPA and payroll provider in place, so the compliance burden is already managed</li>
+      <li>You're planning to stay in the structure for multiple years (there are timing rules and costs to both electing and revoking)</li>
+    </ul>
+    <p>It makes less sense if you're in a startup phase with variable income, if you rely on reinvesting most profit back into the business, or if the entity review surfaces issues with your LLC operating agreement that need to be cleaned up first.</p>
+
+    <h2>What About Timing?</h2>
+    <p>There are strict IRS deadlines for electing S-Corp status. To be treated as an S-Corp for a given calendar year, Form 2553 must be filed by <strong>March 15 of that year</strong> (for calendar-year taxpayers) or within 75 days of the tax year beginning. Miss that window and you'll need to wait until the following year — or request a late election, which the IRS may or may not grant.</p>
+    <p>If you've been operating as an LLC for a few years and are thinking about making the switch, the best time to plan is in Q4, so the election can be properly timed and the payroll infrastructure is in place from January 1.</p>
+  </div>
+
+  <div class="cta-box">
+    <h3>Not sure which structure is right for you?</h3>
+    <p>Every situation is different. A 30-minute conversation with a CPA can tell you exactly where you stand — and what it would take to change it. No obligation.</p>
+    <a href="/#contact" class="cta-btn">Request a Free Consultation</a>
+  </div>
+
+  <div class="article-body">
+    <h2>The Bottom Line</h2>
+    <p>The S-Corp election is a powerful tax strategy — but it's not right for everyone, and it's not right at every income level. The key variables are your net profit, your reasonable salary, your compliance costs, and California's state-level charges. When those factors align, the savings are real and recurring. When they don't, the complexity isn't worth it.</p>
+    <p>If you're approaching $100,000 in annual net profit and haven't had this conversation with a CPA, it's worth having. The decision affects not just your tax bill this year, but your entire back-office structure going forward.</p>
+  </div>
+
+  <div class="author-box">
+    <div class="author-initials">GL</div>
+    <div>
+      <h4>Garrett Loughman, CPA</h4>
+      <p>Garrett is a California-licensed CPA with 15+ years of experience in accounting, finance, and business consulting. He founded ADL Business Consulting, PC to bring big-firm expertise to small business owners across the Bay Area. He has helped dozens of clients evaluate, implement, and maintain S-Corp elections as part of a broader tax strategy.</p>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More from the Blog</h3>
+    <div class="related-grid">
+      <a href="quickbooks-setup-mistakes.html" class="related-card">
+        <div class="rtag">Technology</div>
+        <h4>5 QuickBooks Setup Mistakes That Cost Small Businesses Money</h4>
+      </a>
+      <a href="payroll-california-guide.html" class="related-card">
+        <div class="rtag">Payroll</div>
+        <h4>California Payroll Compliance: A Small Business Owner's Guide</h4>
+      </a>
+      <a href="bookkeeping-habits.html" class="related-card">
+        <div class="rtag">Accounting</div>
+        <h4>4 Monthly Bookkeeping Habits That Keep Your Business Tax-Ready All Year</h4>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-disclaimer">
+    <sup style="font-size:11px;font-weight:700;margin-right:4px">1</sup>ADL Business Consulting, PC is not licensed to provide legal advice. All statements made are either from a tax strategy perspective or for educational purposes.
+  </div>
+  <div class="footer-inner">
+    <div class="footer-copy">© 2026 ADL Business Consulting, PC. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="/#services">Services</a>
+      <a href="/#about">About</a>
+      <a href="/#blog">Blog</a>
+      <a href="/#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

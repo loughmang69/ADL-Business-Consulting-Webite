@@ -48,7 +48,7 @@ const About = ({ tweaks }) => {
 
           {/* Quick credentials */}
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'center', maxWidth: 360 }}>
-            {['Licensed Since 2013', 'Fremont, CA', 'Founded May 2026'].map(tag => (
+            {['Licensed Since 2013', 'Fremont, CA', 'Founded 2026'].map(tag => (
               <span key={tag} style={{
                 fontSize: 12, fontWeight: 600, padding: '5px 12px', borderRadius: 100,
                 background: 'rgba(26,61,110,0.07)', color: '#1a3d6e',
@@ -76,10 +76,10 @@ const About = ({ tweaks }) => {
               With over 15 years of experience spanning accounting, finance, consulting, finance transformation, and both internal and external audit, Garrett brings the full spectrum of financial expertise to every client engagement.
             </p>
             <p style={{ fontSize: 17, lineHeight: 1.7, color: '#3a4a5e' }}>
-              Licensed as a California CPA since 2013, Garrett spent his career in corporate and advisory roles before founding ADL Business Consulting, PC in May 2026 — driven by a desire to bring that same big-firm quality directly to small business owners and individuals who deserve it most.
+              Licensed as a California CPA since 2013, Garrett spent his career in corporate and advisory roles before founding ADL Business Consulting, PC in 2026, driven by a desire to bring that same big-firm quality directly to small business owners and individuals who deserve it most.
             </p>
             <p style={{ fontSize: 17, lineHeight: 1.7, color: '#3a4a5e' }}>
-              Whether you're structuring a new entity, wrestling with payroll, or simply want a trusted advisor who can explain your financials in plain English — Garrett is the kind of CPA who picks up the phone.
+              Whether you're structuring a new entity, wrestling with payroll, or simply want a trusted advisor who can explain your financials in plain English. Garrett is the kind of CPA who picks up the phone.
             </p>
           </div>
 
@@ -92,7 +92,7 @@ const About = ({ tweaks }) => {
             {[
               { value: '15+', label: 'Years in Finance' },
               { value: '2013', label: 'CPA Licensed' },
-              { value: '9', label: 'Service Areas' },
+              { value: '9', label: 'Practice Areas' },
             ].map(stat => (
               <div key={stat.label}>
                 <div style={{ fontSize: 28, fontWeight: 900, color: '#1a3d6e', letterSpacing: '-0.04em' }}>{stat.value}</div>

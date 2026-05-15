@@ -60,12 +60,12 @@ const Hero = ({ tweaks }) => {
           letterSpacing: '0.04em', textTransform: 'uppercase',
         }}>
           <span style={{ width: 6, height: 6, borderRadius: '50%', background: accent, display: 'inline-block' }}></span>
-          Fremont, California · CPA Licensed Since 2013
+          Bay Area, California · CPA Licensed Since 2013
         </div>
 
         <h1 style={{
-          fontSize: 'clamp(36px, 6vw, 68px)',
-          fontWeight: 800, lineHeight: 1.1,
+          fontSize: 'clamp(26px, 3.8vw, 52px)',
+          fontWeight: 800, lineHeight: 1.15,
           color: '#fff', marginBottom: 24,
           letterSpacing: '-0.03em',
           textWrap: 'balance',
@@ -78,23 +78,23 @@ const Hero = ({ tweaks }) => {
             }}>{tweaks.heroTagline}</span>
           ) : (
             <>
-              Your Business Deserves<br/>
+              ADL Business Consulting pairs deep CPA expertise with hands-on business consulting —{' '}
               <span style={{
                 background: `linear-gradient(90deg, ${accent}, #a8e8f5)`,
                 WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
-              }}>Expert Financial Guidance</span>
+              }}>so you spend less time on financials and more time growing what you built.</span>
             </>
           )}
         </h1>
 
         <p style={{
-          fontSize: 'clamp(17px, 2.2vw, 21px)', lineHeight: 1.65,
-          color: 'rgba(255,255,255,0.72)', marginBottom: 44,
-          maxWidth: 620, margin: '0 auto 44px',
+          fontSize: 'clamp(15px, 1.8vw, 18px)', lineHeight: 1.65,
+          color: 'rgba(255,255,255,0.65)', marginBottom: 44,
+          maxWidth: 560, margin: '0 auto 44px',
           textWrap: 'pretty',
         }}>
-          ADL Business Consulting pairs deep CPA expertise with hands-on business consulting — so you spend less time on financials and more time growing what you built.
+          Serving small businesses and individuals across the Bay Area.
         </p>
 
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -137,7 +137,7 @@ const Hero = ({ tweaks }) => {
           {[
             { num: '15+', label: 'Years Experience' },
             { num: 'CPA', label: 'CA License #150109' },
-            { num: '9', label: 'Service Areas' },
+            { num: '9', label: 'Practice Areas' },
           ].map(item => (
             <div key={item.label} style={{ textAlign: 'center' }}>
               <div style={{ fontSize: 32, fontWeight: 800, color: accent, letterSpacing: '-0.03em' }}>{item.num}</div>

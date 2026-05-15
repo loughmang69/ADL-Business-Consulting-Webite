@@ -1,11 +1,8 @@
 
-// Reviews.jsx — Google Reviews scaffold
-// TODO: Replace GOOGLE_PLACE_ID with your actual Google Business Profile Place ID
-// once your Google Business Profile is live. Find it at:
-// https://developers.google.com/maps/documentation/javascript/place-id
-// Example Place ID format: ChIJN1t_tDeuEmsRUsoyG83frY4
-const GOOGLE_PLACE_ID = 'YOUR_PLACE_ID_HERE'; // <-- INSERT PLACE ID HERE
-const GOOGLE_PROFILE_URL = 'https://g.page/r/YOUR_PLACE_ID_HERE/review'; // <-- UPDATE WITH REAL URL
+// Reviews.jsx — Google Reviews
+const GOOGLE_PLACE_ID = '2846227592880255355';
+const GOOGLE_PROFILE_URL = 'https://www.google.com/maps?cid=2846227592880255355';
+const GOOGLE_REVIEW_URL = 'https://search.google.com/local/writereview?placeid=2846227592880255355';
 
 const Reviews = ({ tweaks }) => {
   const accent = tweaks?.accentColor || '#67cbea';
@@ -62,10 +59,10 @@ const Reviews = ({ tweaks }) => {
 
           <div>
             <div style={{ fontSize: 17, fontWeight: 700, color: '#0d1f3c', marginBottom: 6 }}>
-              Google Reviews Widget
+              ADL Business Consulting on Google
             </div>
             <div style={{ fontSize: 14, color: '#7a8a9e', maxWidth: 380, lineHeight: 1.6 }}>
-              Your Google Business Profile is being set up. Once live, this section will display your Google reviews automatically.
+              We're live on Google Business Profile. Leave a review or view our profile — your feedback helps other small business owners find us.
             </div>
           </div>
 
@@ -75,17 +72,17 @@ const Reviews = ({ tweaks }) => {
             padding: '8px 18px', fontSize: 13, color: '#5a6a82', fontWeight: 500,
           }}>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <circle cx="7" cy="7" r="6" stroke="#5a6a82" strokeWidth="1.5"/>
-              <path d="M7 4.5v3l2 1.5" stroke="#5a6a82" strokeWidth="1.5" strokeLinecap="round"/>
+              <circle cx="7" cy="7" r="6" stroke="#5a6a82" strokeWidth="1.5" fill="none"/>
+              <path d="M5 7l1.5 1.5L9.5 5" stroke="#5a6a82" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            Coming soon — Place ID needed
+            Profile verified &amp; live
           </div>
         </div>
 
         {/* CTA to Google Profile */}
         <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
           <a
-            href={GOOGLE_PROFILE_URL}
+            href={GOOGLE_REVIEW_URL}
             target="_blank"
             rel="noopener noreferrer"
             style={{

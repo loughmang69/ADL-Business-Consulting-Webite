@@ -28,7 +28,7 @@ const Footer = ({ tweaks }) => {
             <p style={{ fontSize: 14, lineHeight: 1.7, maxWidth: 260, textWrap: 'pretty' }}>
               CPA-led business consulting for small businesses and individuals across the Bay Area.
             </p>
-            <a href="#" style={{
+            <a href="https://www.linkedin.com/in/garrettloughman/" target="_blank" rel="noopener noreferrer" style={{
               display: 'inline-flex', alignItems: 'center', gap: 8,
               marginTop: 20, color: 'rgba(255,255,255,0.5)',
               textDecoration: 'none', fontSize: 14, fontWeight: 500,

@@ -12,36 +12,12 @@ const Stars = ({ count = 5 }) => (
 
 const TESTIMONIALS = [
   {
-    name: 'Maria T.',
-    role: 'Owner, Coastal Kitchen & Catering',
+    name: 'Valerie L.',
+    role: 'Owner — Excel Cleaning, LLC',
     stars: 5,
-    text: "Garrett restructured our business as an S-Corp and saved us thousands in self-employment taxes our first year. He explained everything clearly and made a confusing process feel manageable. We finally feel like we have a real financial partner.",
-    initials: 'MT',
+    text: "Before ADL, I was running Excel Cleaning as a sole proprietor with no real structure, no back office, and no clear picture of my finances. Garrett completely transformed my business from the ground up — forming my LLC, building out my accounting and bookkeeping, handling my taxes, redesigning my branding, and continuously finding ways to save me money. I genuinely don't know where my business would be without him.",
+    initials: 'VL',
     color: '#1a3d6e',
-  },
-  {
-    name: 'James R.',
-    role: 'Independent Contractor, Tech Industry',
-    stars: 5,
-    text: "I had a mess of receipts, three different income streams, and no idea how to handle estimated taxes. Garrett cleaned everything up, set me up on QuickBooks, and got me a refund I wasn't expecting. Highly recommend for any freelancer.",
-    initials: 'JR',
-    color: '#225e89',
-  },
-  {
-    name: 'Sandra & Mike L.',
-    role: 'Co-owners, Bay Area Retail Shop',
-    stars: 5,
-    text: "We needed a new POS system and better bookkeeping. Garrett handled both — the implementation was seamless and our books have been clean ever since. He's responsive, honest, and doesn't talk down to you.",
-    initials: 'SL',
-    color: '#142b56',
-  },
-  {
-    name: 'Derek N.',
-    role: 'Founder, Early-Stage Startup',
-    stars: 5,
-    text: "As a first-time founder, I had no idea what entity to form or how to set up payroll. Garrett walked me through every decision, set up our whole back office, and even helped us evaluate a few AI tools. Worth every penny.",
-    initials: 'DN',
-    color: '#1a527a',
   },
 ];
 
@@ -72,9 +48,10 @@ const Testimonials = ({ tweaks }) => {
 
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
           gap: 24,
         }}>
+          {/* Real testimonial cards */}
           {TESTIMONIALS.map((t, i) => (
             <div key={i} style={{
               background: '#fff',
@@ -116,6 +93,61 @@ const Testimonials = ({ tweaks }) => {
               </div>
             </div>
           ))}
+
+          {/* Submit-a-testimonial CTA card */}
+          <div style={{
+            borderRadius: 20,
+            padding: '32px 28px',
+            border: '2px dashed rgba(26,61,110,0.18)',
+            background: 'rgba(247,249,252,0.7)',
+            display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 20,
+            transition: 'border-color 0.22s, transform 0.22s',
+          }}
+          onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(26,61,110,0.35)'; e.currentTarget.style.transform = 'translateY(-3px)'; }}
+          onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(26,61,110,0.18)'; e.currentTarget.style.transform = 'translateY(0)'; }}
+          >
+            {/* Envelope icon */}
+            <div style={{
+              width: 48, height: 48, borderRadius: 14,
+              background: 'rgba(26,61,110,0.08)',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+            }}>
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <rect x="2" y="5" width="18" height="13" rx="2" stroke="#1a3d6e" strokeWidth="1.7"/>
+                <path d="M2 8l9 6 9-6" stroke="#1a3d6e" strokeWidth="1.7" strokeLinecap="round"/>
+              </svg>
+            </div>
+
+            <div>
+              <div style={{ fontSize: 17, fontWeight: 700, color: '#0d1f3c', marginBottom: 10, lineHeight: 1.3 }}>
+                Share Your Experience
+              </div>
+              <p style={{ fontSize: 14.5, lineHeight: 1.7, color: '#5a6a82', textWrap: 'pretty' }}>
+                Did ADL Business Consulting help you and your business in a meaningful way? We'd love to hear from you.
+              </p>
+            </div>
+
+            <a
+              href="mailto:info@adlbusinessconsulting.com?subject=Client%20Testimonial"
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: 8,
+                padding: '11px 22px', borderRadius: 100,
+                background: '#1a3d6e', color: '#fff',
+                fontWeight: 600, fontSize: 14, textDecoration: 'none',
+                alignSelf: 'flex-start',
+                transition: 'background 0.2s, transform 0.15s',
+                boxShadow: '0 4px 14px rgba(26,61,110,0.18)',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = '#142b56'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
+              onMouseLeave={e => { e.currentTarget.style.background = '#1a3d6e'; e.currentTarget.style.transform = 'translateY(0)'; }}
+            >
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                <rect x="1" y="3" width="13" height="10" rx="1.5" stroke="currentColor" strokeWidth="1.4"/>
+                <path d="M1 6l6.5 4.5L14 6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+              </svg>
+              info@adlbusinessconsulting.com
+            </a>
+          </div>
         </div>
       </div>
     </section>

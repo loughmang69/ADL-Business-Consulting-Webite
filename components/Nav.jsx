@@ -43,8 +43,9 @@ const Nav = ({ tweaks }) => {
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         height: 72,
       }}>
-        <a href="#hero" onClick={(e) => scrollTo(e, '#hero')} style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
-          <img src="uploads/logo.jpg" alt="ADL Business Consulting" style={{ height: 44, width: 'auto', borderRadius: 6 }} />
+        <a href="#hero" onClick={(e) => scrollTo(e, '#hero')} style={{ display: 'flex', alignItems: 'center', gap: 0, textDecoration: 'none' }}>
+          <span style={{ fontSize: 22, fontWeight: 900, letterSpacing: '-0.04em', color: tweaks?.accentColor || '#67cbea' }}>ADL</span>
+          <span style={{ fontSize: 14, fontWeight: 600, letterSpacing: '-0.01em', color: scrolled ? '#1a3d6e' : 'rgba(255,255,255,0.85)', marginLeft: 8, lineHeight: 1.2 }}>Business<br/>Consulting</span>
         </a>
 
         {/* Desktop links */}
